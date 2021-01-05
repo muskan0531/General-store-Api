@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
     </div>
 <div >
-     <form action="/user/registration.php" method="post">
+     <form action="/user/user/registration.php" method="post">
         <div >
         <div>
         <label for="username">Username</label>

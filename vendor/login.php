@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
     </div>
     <div>
-    <form action="/vendor/login.php" method="post">
+    <form action="/user/vendor/login.php" method="post">
     <div>
         <div>
         <label for="mobile">Mobile</label>

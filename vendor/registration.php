@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
     </div>
 <div >
-     <form action="/vendor/registration.php" method="post">
+     <form action="/user/vendor/registration.php" method="post">
         <div >
             <div>
             <label for="mobile">mobile</label>
