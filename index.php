@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="submit" href="https://fierce-waters-42040.herokuapp.com/user/login.php">User login</button>
-    <button type="submit" href="https://fierce-waters-42040.herokuapp.com/user/registration.php">User regiter</button>
-    <button type="submit" href="https://fierce-waters-42040.herokuapp.com/vendor1/login.php">vendor login</button>
-    <button type="submit" href="https://fierce-waters-42040.herokuapp.com/vendor1/registration.php">vendor regiter</button>
+    <button  href="https://fierce-waters-42040.herokuapp.com/user/login.php">User login</button>
+    <button  href="https://fierce-waters-42040.herokuapp.com/user/registration.php">User regiter</button>
+    <button  href="https://fierce-waters-42040.herokuapp.com/vendor1/login.php">vendor login</button>
+    <button  href="https://fierce-waters-42040.herokuapp.com/vendor1/registration.php">vendor regiter</button>
 
 </body>
 </html>
