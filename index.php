@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="submit">login</button>
-    <button type="submit">regiter</button>
+    <button type="submit" href="user/login.php">User login</button>
+    <button type="submit" href="user/registration.php">User regiter</button>
+    <button type="submit" href="vendor/login.php">vendor login</button>
+    <button type="submit" href="vendor/registration.php">vendor regiter</button>
 
 </body>
 </html>
