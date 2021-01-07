@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-    include 'partials/_dbconnect.php';
+   include './partials/_dbconnect.php';
     $sql = "SELECT * FROM `items`";
     $result = mysqli_query($conn,$sql);
     if($result){

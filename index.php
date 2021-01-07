@@ -10,6 +10,7 @@
     <a> <?php echo "<button onclick= \"location.href='user/registration.php'\">User register</button>";?></a>
     <a> <?php echo "<button onclick= \"location.href='vendor1/login.php'\">vendor login</button>";?></a>
     <a> <?php echo "<button onclick= \"location.href='vendor1/registration.php'\">vendor register</button>";?></a>
+    <a> <?php echo "<button onclick= \"location.href='vendor1/list.php'\"> items </button>";?></a>
 
 </body>
 </html>

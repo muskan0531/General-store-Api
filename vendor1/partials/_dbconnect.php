@@ -1,8 +1,15 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "users";
+//local(development) connection
+// $server = "localhost";
+// $username = "root";
+// $password = "";
+// $database = "vendors";
+
+//REMOTE server connection
+$server = "remotemysql.com";
+$username = "2rmOlWEIWw";
+$password = "YttCaL6JAA";
+$database = "2rmOlWEIWw";
 
 $conn = mysqli_connect($server, $username, $password, $database);
 if (!$conn){

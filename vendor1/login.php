@@ -2,14 +2,14 @@
 $login = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    include 'partials/_dbconnect.php';
+    include './partials/_dbconnect.php';
     $mobile = $_POST["mobile"];
     $password = $_POST["password"]; 
       
-    $sql = "Select * from vendors where mobile='$mobile' AND password='$password'";
+    $sql = "Select * from vendor1 where mobile='$mobile' AND password='$password'";
     $result = mysqli_query($conn, $sql);
-    $num = mysqli_num_rows($result);
-    if ($num == 1){
+    //$num = mysqli_num_rows($result);
+    if ($result){
         $login = true;
         
     } 
@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1. Login API for user</title>
+    <title>3. Login API for vendor</title>
 </head>
 <body>
     <div>
@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
     </div>
     <div>
-    <form action="/user/vendor/login.php" method="post">
+    <form action="/user/vendor1/login.php" method="post">
     <div>
         <div>
         <label for="mobile">Mobile</label>

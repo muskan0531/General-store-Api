@@ -3,13 +3,13 @@ $registered =false;
 $registerError =false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     
-    include 'partials/_dbconnect.php';
+    include './partials/_dbconnect.php';
     $username = $_POST["username"];
     $password = $_POST["password"];
     $cpassword = $_POST["cpassword"];
     $exists=false;
     if(($password == $cpassword) && $exists==false){
-        $sql = "INSERT INTO `users` ( `username`, `password`) VALUES ('$username', '$password')";
+        $sql = "INSERT INTO `user1` ( `username`, `password`) VALUES ('$username', '$password')";
         $result = mysqli_query($conn, $sql);
         if ($result){
             $registered =true;

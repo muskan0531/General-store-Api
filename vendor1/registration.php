@@ -3,13 +3,13 @@ $registered = false;
 $registerError= false;
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    include 'partials/_dbconnect.php';
+    include './partials/_dbconnect.php';
     $mobile = $_POST["mobile"];
     $password = $_POST["password"];
     $cpassword = $_POST["cpassword"];
     $exists=false;
     if(($password == $cpassword) && $exists==false){
-        $sql = "INSERT INTO `vendors` ( `mobile`, `password`) VALUES ('$mobile', '$password')";
+        $sql = "INSERT INTO `vendor1` ( `mobile`, `password`) VALUES ('$mobile', '$password')";
         $result = mysqli_query($conn, $sql);
         if ($result){
             $registered =true;  
@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 <div>
     <?php
-        if($registered){
+        if($registered==true){
             echo '<div style="background-color:green; color:yellow;">  Your account is now created and you can login</div>';
         }
         if($registerError){
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
     </div>
 <div >
-     <form action="/user/vendor/registration.php" method="post">
+     <form action="../vendor1/registration.php" method="post">
         <div >
             <div>
             <label for="mobile">mobile</label>
