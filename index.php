@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <button  href="https://fierce-waters-42040.herokuapp.com/user/login.php">User login</button>
-    <button  href="https://fierce-waters-42040.herokuapp.com/user/registration.php">User regiter</button>
-    <button  href="https://fierce-waters-42040.herokuapp.com/vendor1/login.php">vendor login</button>
-    <button  href="https://fierce-waters-42040.herokuapp.com/vendor1/registration.php">vendor regiter</button>
+    <a> <?php echo "<button onclick= \"location.href='user/login.php'\">User login</button>";?></a>
+    <a> <?php echo "<button onclick= \"location.href='user/registration.php'\">User register</button>";?></a>
+    <a> <?php echo "<button onclick= \"location.href='vendor1/login.php'\">vendor login</button>";?></a>
+    <a> <?php echo "<button onclick= \"location.href='vendor1/registration.php'\">vendor register</button>";?></a>
 
 </body>
 </html>
