@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 <div>
     <?php
-        if($registered==true){
+        if($registered){
             echo '<div style="background-color:green; color:yellow;">  Your account is now created and you can login</div>';
         }
         if($registerError){
