@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
     </div>
     <div>
-    <form action="/user/user/login.php" method="post">
+    <form action="https://fierce-waters-42040.herokuapp.com/user/user/login.php" method="post">
     <div>
         <label for="username">Username</label>
         <input type="text" name="username" id="name">
