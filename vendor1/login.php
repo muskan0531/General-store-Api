@@ -8,8 +8,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       
     $sql = "Select * from vendor1 where mobile='$mobile' AND password='$password'";
     $result = mysqli_query($conn, $sql);
-    //$num = mysqli_num_rows($result);
-    if ($result){
+    $num = mysqli_num_rows($result);
+    if ($num){
         $login = true;
         
     } 
